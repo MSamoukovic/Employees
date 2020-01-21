@@ -3,3 +3,9 @@ C:\Users\compu\source\repos\Employees\Employees\Employees.Data\bin\Debug\Employe
 C:\Users\compu\source\repos\Employees\Employees\Employees.Data\obj\Debug\Employees.Data.csprojAssemblyReference.cache
 C:\Users\compu\source\repos\Employees\Employees\Employees.Data\obj\Debug\Employees.Data.dll
 C:\Users\compu\source\repos\Employees\Employees\Employees.Data\obj\Debug\Employees.Data.pdb
+C:\Users\compu\source\repos\Employees\Employees\Employees.Data\bin\Debug\Employees.Data.dll.config
+C:\Users\compu\source\repos\Employees\Employees\Employees.Data\bin\Debug\EntityFramework.dll
+C:\Users\compu\source\repos\Employees\Employees\Employees.Data\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\compu\source\repos\Employees\Employees\Employees.Data\bin\Debug\EntityFramework.xml
+C:\Users\compu\source\repos\Employees\Employees\Employees.Data\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\compu\source\repos\Employees\Employees\Employees.Data\obj\Debug\Employees.Data.csproj.CopyComplete

@@ -56,6 +56,7 @@
     <Compile Include="Services\EmployeeDbContext.cs" />
     <Compile Include="Services\IEmployeeData.cs" />
     <Compile Include="Services\InMemoryEmployeeData.cs" />
+    <Compile Include="Services\SqlEmployeeData.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

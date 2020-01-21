@@ -76,3 +76,15 @@ C:\Users\compu\source\repos\Employees\Employees\Employees.Web\obj\Debug\Employee
 C:\Users\compu\source\repos\Employees\Employees\Employees.Web\obj\Debug\Employees.Web.csproj.CopyComplete
 C:\Users\compu\source\repos\Employees\Employees\Employees.Web\obj\Debug\Employees.Web.dll
 C:\Users\compu\source\repos\Employees\Employees\Employees.Web\obj\Debug\Employees.Web.pdb
+C:\Users\compu\source\repos\Employees\Employees\Employees.Web\bin\Autofac.dll
+C:\Users\compu\source\repos\Employees\Employees\Employees.Web\bin\Autofac.Integration.Mvc.dll
+C:\Users\compu\source\repos\Employees\Employees\Employees.Web\bin\Employees.Data.dll
+C:\Users\compu\source\repos\Employees\Employees\Employees.Web\bin\EntityFramework.dll
+C:\Users\compu\source\repos\Employees\Employees\Employees.Web\bin\EntityFramework.SqlServer.dll
+C:\Users\compu\source\repos\Employees\Employees\Employees.Web\bin\Employees.Data.pdb
+C:\Users\compu\source\repos\Employees\Employees\Employees.Web\bin\Employees.Data.dll.config
+C:\Users\compu\source\repos\Employees\Employees\Employees.Web\bin\Autofac.pdb
+C:\Users\compu\source\repos\Employees\Employees\Employees.Web\bin\Autofac.xml
+C:\Users\compu\source\repos\Employees\Employees\Employees.Web\bin\Autofac.Integration.Mvc.xml
+C:\Users\compu\source\repos\Employees\Employees\Employees.Web\bin\EntityFramework.xml
+C:\Users\compu\source\repos\Employees\Employees\Employees.Web\bin\EntityFramework.SqlServer.xml

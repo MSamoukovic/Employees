@@ -10,6 +10,12 @@ namespace Employees.Data.Services
     public class InMemoryEmployeeData : IEmployeeData
     {
         List<Employee> employees;
+
+        public void AddEmployee(Employee employee)
+        {
+            employees.Add(employee);
+        }
+
         public IEnumerable<Employee> GetAll()
         {
             return employees;

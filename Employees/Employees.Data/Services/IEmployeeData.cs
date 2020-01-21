@@ -10,6 +10,7 @@ namespace Employees.Data.Services
     public interface IEmployeeData
     {
         IEnumerable<Employee> GetAll();
+        void AddEmployee(Employee employee);
 
     }
 }

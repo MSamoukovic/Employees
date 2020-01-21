@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace Employees.Data.Services
 {
-    class EmployeeDbContext : DbContext
+    public class EmployeeDbContext : DbContext
     {
         public DbSet<Employee> Employees { get; set; }
     }
