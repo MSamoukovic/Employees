@@ -1,6 +1,7 @@
 ﻿using Employees.Data.Models;
 using System;
 using System.Collections.Generic;
+using System.Data.Entity;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,6 +26,18 @@ namespace Employees.Data.Services
         public IEnumerable<Employee> GetAll()
         {
             return from e in db.Employees select e;
+        }
+
+        public Employee GetId(int employeeId)
+        {
+            return db.Employees.FirstOrDefault(e => e.Id == employeeId);
+        }
+
+        public void Update(Employee employee)
+        {
+            var entry = db.Entry(employee);
+            entry.State = EntityState.Modified;
+            db.SaveChanges();
         }
     }
 }

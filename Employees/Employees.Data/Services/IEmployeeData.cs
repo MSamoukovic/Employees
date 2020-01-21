@@ -11,6 +11,7 @@ namespace Employees.Data.Services
     {
         IEnumerable<Employee> GetAll();
         void AddEmployee(Employee employee);
-
+        Employee GetId(int employeeId);
+        void Update(Employee employee);
     }
 }

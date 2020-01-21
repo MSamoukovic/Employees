@@ -20,5 +20,20 @@ namespace Employees.Data.Services
         {
             return employees;
         }
+
+        public Employee GetId(int employeeId)
+        {
+            return employees.FirstOrDefault(e=>e.Id==employeeId);
+        }
+
+        public void Update(Employee employee)
+        {
+            var model = GetId(employee.Id);
+            model.FirstName=employee.FirstName;
+            model.LastName = employee.LastName;
+            model.Email = employee.Email;
+
+
+        }
     }
 }
