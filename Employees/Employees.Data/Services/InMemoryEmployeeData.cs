@@ -16,6 +16,16 @@ namespace Employees.Data.Services
             employees.Add(employee);
         }
 
+        public void Delete(Employee employee)
+        {
+            var model = GetId(employee.Id);
+            model.FirstName = employee.FirstName;
+            model.LastName = employee.LastName;
+            model.Email = employee.Email;
+
+            employees.Remove(model);
+        }
+
         public IEnumerable<Employee> GetAll()
         {
             return employees;
@@ -32,8 +42,6 @@ namespace Employees.Data.Services
             model.FirstName=employee.FirstName;
             model.LastName = employee.LastName;
             model.Email = employee.Email;
-
-
         }
     }
 }

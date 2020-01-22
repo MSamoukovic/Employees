@@ -9,9 +9,11 @@ namespace Employees.Web.Models
     public class Employee
     {
         [Required]
+        [Display(Name="First name")]
         public string FirstName { get; set; }
 
         [Required]
+        [Display(Name="Last name")]
         public string LastName { get; set; }
 
         [DataType(DataType.EmailAddress)]

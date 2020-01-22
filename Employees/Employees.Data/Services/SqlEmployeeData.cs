@@ -23,9 +23,19 @@ namespace Employees.Data.Services
             db.SaveChanges();
         }
 
+        public void Delete(Employee employee)
+        {
+            db.Entry(employee).State = EntityState.Deleted;
+            db.SaveChanges(); 
+        }
+
         public IEnumerable<Employee> GetAll()
         {
-            return from e in db.Employees select e;
+            var query = from e in db.Employees select e;
+            return query;
+        
+
+
         }
 
         public Employee GetId(int employeeId)

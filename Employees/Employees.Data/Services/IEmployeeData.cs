@@ -13,5 +13,6 @@ namespace Employees.Data.Services
         void AddEmployee(Employee employee);
         Employee GetId(int employeeId);
         void Update(Employee employee);
+        void Delete(Employee employee);
     }
 }

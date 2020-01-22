@@ -53,5 +53,28 @@ namespace Employees.Web.Controllers
             return View(employee);
         }
 
+        public ActionResult Details(int id)
+        {
+            var model = db.GetId(id);
+            return View(model);
+        }
+
+        public ActionResult Delete(int id)
+        {
+            var model = db.GetId(id);
+            return View(model);
+        }
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult Delete(Employee employee)
+        {
+            db.Delete(employee);
+            return RedirectToAction("Index");
+        }
+
+
+
     }
 }
