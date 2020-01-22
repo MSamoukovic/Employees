@@ -48,7 +48,7 @@ namespace Employees.Web.Controllers
             if (ModelState.IsValid)
             {
                 db.Update(employee);
-                return RedirectToAction("Index");
+                TempData["Message"] = "You have saved the employee!";
             }
             return View(employee);
         }
@@ -65,7 +65,6 @@ namespace Employees.Web.Controllers
             return View(model);
         }
 
-
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Delete(Employee employee)
@@ -73,8 +72,5 @@ namespace Employees.Web.Controllers
             db.Delete(employee);
             return RedirectToAction("Index");
         }
-
-
-
     }
 }

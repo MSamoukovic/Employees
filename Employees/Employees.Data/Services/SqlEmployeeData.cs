@@ -33,9 +33,6 @@ namespace Employees.Data.Services
         {
             var query = from e in db.Employees select e;
             return query;
-        
-
-
         }
 
         public Employee GetId(int employeeId)
