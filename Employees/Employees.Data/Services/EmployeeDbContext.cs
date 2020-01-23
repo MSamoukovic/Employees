@@ -11,5 +11,7 @@ namespace Employees.Data.Services
     public class EmployeeDbContext : DbContext
     {
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<Person> Persons { get; set; }
+
     }
 }

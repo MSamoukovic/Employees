@@ -23,6 +23,8 @@ namespace Employees.Web.Models
         [DataType(DataType.EmailAddress)]
         [Required]
         [Display(Name="Confirm email")]
+        [Compare("Email", ErrorMessage = "The email and confirm email do not match.")]
+
         public string ConfirmEmail { get; set; }
 
         [Required]

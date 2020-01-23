@@ -16,9 +16,16 @@ namespace Employees.Web.Controllers
         {
             this.db = db;
         }
-        public ActionResult Index()
+
+        public ActionResult Index(string searchString)
         {
+            Console.WriteLine("search : " +searchString);
             var model = db.GetAll();
+
+            if (!String.IsNullOrEmpty(searchString))
+            {
+                model = model.Where(e => e.FirstName.Contains(searchString));
+            }
             return View(model);
         }
 
@@ -71,6 +78,13 @@ namespace Employees.Web.Controllers
         {
             db.Delete(employee);
             return RedirectToAction("Index");
+        }
+
+        [HttpPost]
+        public ActionResult Find()
+        {
+            var model = db.GetSomeNames();
+            return View(model);
         }
     }
 }
