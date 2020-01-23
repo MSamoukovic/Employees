@@ -39,6 +39,7 @@ namespace Employees.Web.Controllers
         public ActionResult Create(Employee employee)
         {
             db.AddEmployee(employee);
+
             return View();
         }
 
@@ -78,13 +79,6 @@ namespace Employees.Web.Controllers
         {
             db.Delete(employee);
             return RedirectToAction("Index");
-        }
-
-        [HttpPost]
-        public ActionResult Find()
-        {
-            var model = db.GetSomeNames();
-            return View(model);
         }
     }
 }

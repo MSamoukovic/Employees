@@ -19,5 +19,6 @@ namespace Employees.Data.Models
         [DataType(DataType.EmailAddress)]
         [Required]
         public string Email { get; set; }
-}
+
+    }
 }
