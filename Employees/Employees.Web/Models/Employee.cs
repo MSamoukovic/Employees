@@ -8,6 +8,8 @@ namespace Employees.Web.Models
 {
     public class Employee
     {
+        public int Id { get; set; }
+
         [Required]
         [Display(Name="First name")]
         public string FirstName { get; set; }
@@ -37,6 +39,5 @@ namespace Employees.Web.Models
         [Display(Name = "Confirm password")]
         [Compare("Password", ErrorMessage = "The password and confirm password do not match.")]
         public string ConfirmPassword { get; set; }
-      
-}
+    }
 }

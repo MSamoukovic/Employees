@@ -11,15 +11,26 @@ namespace Employees.Data.Services
     {
         private EmployeeDbContext db;
 
-        public SqlPersonData(EmployeeDbContext dbb)
+
+        public SqlPersonData(EmployeeDbContext db)
         {
-            this.db = dbb;
+            this.db = db;
         }
 
         public void AddPerson(Person person)
         {
             db.Persons.Add(person);
             db.SaveChanges();
+        }
+
+        public IEnumerable<Person> GetAll()
+        {
+            return from p in db.Persons select p;
+        }
+
+        public Person GetId(int employeeId)
+        {
+            return db.Persons.FirstOrDefault(p => p.EmployeeId == employeeId);
         }
     }
 }

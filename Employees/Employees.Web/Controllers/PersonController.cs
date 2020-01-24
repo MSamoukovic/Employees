@@ -1,5 +1,6 @@
 ﻿using Employees.Data.Models;
 using Employees.Data.Services;
+using Employees.Web.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,22 +12,46 @@ namespace Employees.Web.Controllers
     public class PersonController : Controller
     {
         // GET: Person
-        public IPersonData dbb;
-        public PersonController(IPersonData dbb)
+        public IPersonData personDb;
+        public IEmployeeData employeeDb;
+        
+        public PersonController(IPersonData personDb, IEmployeeData employeeDb)
         {
-            this.dbb = dbb;
+            this.personDb = personDb;
+            this.employeeDb = employeeDb;
         }
         public ActionResult Index()
         {
-            return View();
+            var model = new CreatePerson();
+            model.Employees = employeeDb.GetAll().Select(e => new Models.Employee
+            {
+                Id = e.Id,
+                FirstName = e.FirstName,
+                //Email = e.Email,
+                //LastName = e.LastName,
+            }).ToList();
+
+            return View(model);
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
         public ActionResult Index(Person person)
         {
-            dbb.AddPerson(person);
-            return View();
+            personDb.AddPerson(person);
+            return RedirectToAction("Index");
+        }
+
+        public ActionResult Show()
+        {
+            List<Data.Models.Employee> em = employeeDb.GetAll().ToList();
+            List<Data.Models.Person> pe = personDb.GetAll().ToList();
+
+            var model = from e in em
+                        join p in pe on e.Id equals p.EmployeeId
+                        select new PersonEmployee { FirstName=e.FirstName, LastName=e.LastName,Age=p.Age, PhoneNumber=p.PhoneNumber };
+
+            return View(model);
         }
     }
 }

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
@@ -12,7 +13,11 @@ namespace Employees.Data.Models
         public int Id { get; set; }
         public int Age { get; set; }
 
-      //  [ForeignKey("Employee")]
+        [Required]
+        [Display(Name="Phone number")]
+        public string PhoneNumber { get; set; }
+
+        //  [ForeignKey("Employee")]
         public int EmployeeId { get; set; }
 
         public virtual Employee Employee { get; set; }

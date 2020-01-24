@@ -40,12 +40,6 @@ namespace Employees.Data.Services
             return db.Employees.FirstOrDefault(e => e.Id == employeeId);
         }
 
-        public IEnumerable<Employee> GetSomeNames()
-        {
-            var query = from e in db.Employees where e.Email.EndsWith("gmail.com") select e;
-            return query;
-        }
-
         public void Update(Employee employee)
         {
             var entry = db.Entry(employee);
