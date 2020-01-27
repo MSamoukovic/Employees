@@ -34,5 +34,8 @@ C:\Users\compu\source\repos\Employees\Employees\Employees.Data\bin\Debug\Microso
 C:\Users\compu\source\repos\Employees\Employees\Employees.Data\bin\Debug\Newtonsoft.Json.xml
 C:\Users\compu\source\repos\Employees\Employees\Employees.Data\bin\Debug\System.IdentityModel.Tokens.Jwt.pdb
 C:\Users\compu\source\repos\Employees\Employees\Employees.Data\bin\Debug\System.IdentityModel.Tokens.Jwt.xml
-C:\Users\compu\source\repos\Employees\Employees\Employees.Data\obj\Debug\Employees.Data.csprojAssemblyReference.cache
 C:\Users\compu\source\repos\Employees\Employees\Employees.Data\obj\Debug\Employees.Data.Migrations.AddedNewColumnInTablePerson1.resources
+C:\Users\compu\Source\Repos\Employees\Employees\Employees.Data\obj\Debug\Employees.Data.Migrations.Authorization.resources
+C:\Users\compu\Source\Repos\Employees\Employees\Employees.Data\obj\Debug\Employees.Data.Migrations.AddedTablesUserAndRole.resources
+C:\Users\compu\Source\Repos\Employees\Employees\Employees.Data\obj\Debug\Employees.Data.Migrations.Authorization1.resources
+C:\Users\compu\Source\Repos\Employees\Employees\Employees.Data\obj\Debug\Employees.Data.Migrations.AddUserRolesTable.resources

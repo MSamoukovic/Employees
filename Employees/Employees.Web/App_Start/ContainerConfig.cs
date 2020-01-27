@@ -15,8 +15,11 @@ namespace Employees.Web.App_Start
         {
             var builder = new ContainerBuilder();
             builder.RegisterControllers(typeof(MvcApplication).Assembly);
+
             builder.RegisterType<SqlPersonData>().As<IPersonData>().InstancePerRequest();
             builder.RegisterType<SqlEmployeeData>().As<IEmployeeData>().InstancePerRequest();
+            builder.RegisterType<SqlUserData>().As<IUserData>().InstancePerRequest();
+
             builder.RegisterType<EmployeeDbContext>().InstancePerRequest();
 
             var container = builder.Build();

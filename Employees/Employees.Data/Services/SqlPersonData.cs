@@ -11,7 +11,6 @@ namespace Employees.Data.Services
     {
         private EmployeeDbContext db;
 
-
         public SqlPersonData(EmployeeDbContext db)
         {
             this.db = db;

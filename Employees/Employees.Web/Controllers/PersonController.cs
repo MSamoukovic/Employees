@@ -20,19 +20,7 @@ namespace Employees.Web.Controllers
             this.personDb = personDb;
             this.employeeDb = employeeDb;
         }
-        public ActionResult Index()
-        {
-            var model = new CreatePerson();
-            model.Employees = employeeDb.GetAll().Select(e => new Models.Employee
-            {
-                Id = e.Id,
-                FirstName = e.FirstName,
-                //Email = e.Email,
-                //LastName = e.LastName,
-            }).ToList();
-
-            return View(model);
-        }
+       
 
         [HttpPost]
         [ValidateAntiForgeryToken]

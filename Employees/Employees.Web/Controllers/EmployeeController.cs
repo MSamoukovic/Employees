@@ -19,13 +19,7 @@ namespace Employees.Web.Controllers
 
         public ActionResult Index(string searchString)
         {
-            Console.WriteLine("search : " +searchString);
             var model = db.GetAll();
-
-            if (!String.IsNullOrEmpty(searchString))
-            {
-                model = model.Where(e => e.FirstName.Contains(searchString));
-            }
             return View(model);
         }
 

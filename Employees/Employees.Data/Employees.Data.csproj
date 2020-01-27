@@ -69,12 +69,14 @@
       <HintPath>..\packages\System.ComponentModel.Annotations.4.5.0\lib\net461\System.ComponentModel.Annotations.dll</HintPath>
     </Reference>
     <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.IdentityModel.Tokens.Jwt, Version=5.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\System.IdentityModel.Tokens.Jwt.5.4.0\lib\net461\System.IdentityModel.Tokens.Jwt.dll</HintPath>
     </Reference>
     <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -99,15 +101,39 @@
     <Compile Include="Migrations\202001241031441_AddedNewColumnInTablePerson1.designer.cs">
       <DependentUpon>202001241031441_AddedNewColumnInTablePerson1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202001271052538_Authorization.cs" />
+    <Compile Include="Migrations\202001271052538_Authorization.designer.cs">
+      <DependentUpon>202001271052538_Authorization.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202001271103193_AddedTablesUserAndRole.cs" />
+    <Compile Include="Migrations\202001271103193_AddedTablesUserAndRole.designer.cs">
+      <DependentUpon>202001271103193_AddedTablesUserAndRole.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202001271142025_Authorization1.cs" />
+    <Compile Include="Migrations\202001271142025_Authorization1.designer.cs">
+      <DependentUpon>202001271142025_Authorization1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202001271426507_AddUserRolesTable.cs" />
+    <Compile Include="Migrations\202001271426507_AddUserRolesTable.designer.cs">
+      <DependentUpon>202001271426507_AddUserRolesTable.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Employee.cs" />
     <Compile Include="Models\Person.cs" />
+    <Compile Include="Models\Role.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\login\CustomMembership.cs" />
+    <Compile Include="Services\login\CustomMembershipUser.cs" />
+    <Compile Include="Services\login\CustomPrincipal.cs" />
+    <Compile Include="Services\login\CustomRole.cs" />
     <Compile Include="Services\EmployeeDbContext.cs" />
     <Compile Include="Services\IEmployeeData.cs" />
     <Compile Include="Services\IPersonData.cs" />
+    <Compile Include="Services\IUserData.cs" />
     <Compile Include="Services\SqlEmployeeData.cs" />
     <Compile Include="Services\SqlPersonData.cs" />
+    <Compile Include="Services\SqlUserData.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -125,6 +151,18 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\202001241031441_AddedNewColumnInTablePerson1.resx">
       <DependentUpon>202001241031441_AddedNewColumnInTablePerson1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202001271052538_Authorization.resx">
+      <DependentUpon>202001271052538_Authorization.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202001271103193_AddedTablesUserAndRole.resx">
+      <DependentUpon>202001271103193_AddedTablesUserAndRole.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202001271142025_Authorization1.resx">
+      <DependentUpon>202001271142025_Authorization1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202001271426507_AddUserRolesTable.resx">
+      <DependentUpon>202001271426507_AddUserRolesTable.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
