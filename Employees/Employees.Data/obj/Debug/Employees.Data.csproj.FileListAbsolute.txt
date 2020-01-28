@@ -39,3 +39,5 @@ C:\Users\compu\Source\Repos\Employees\Employees\Employees.Data\obj\Debug\Employe
 C:\Users\compu\Source\Repos\Employees\Employees\Employees.Data\obj\Debug\Employees.Data.Migrations.AddedTablesUserAndRole.resources
 C:\Users\compu\Source\Repos\Employees\Employees\Employees.Data\obj\Debug\Employees.Data.Migrations.Authorization1.resources
 C:\Users\compu\Source\Repos\Employees\Employees\Employees.Data\obj\Debug\Employees.Data.Migrations.AddUserRolesTable.resources
+C:\Users\compu\Source\Repos\Employees\Employees\Employees.Data\obj\Debug\Employees.Data.Migrations.AddedTableImages.resources
+C:\Users\compu\Source\Repos\Employees\Employees\Employees.Data\obj\Debug\Employees.Data.csprojAssemblyReference.cache

@@ -18,7 +18,9 @@ namespace Employees.Web.App_Start
 
             builder.RegisterType<SqlPersonData>().As<IPersonData>().InstancePerRequest();
             builder.RegisterType<SqlEmployeeData>().As<IEmployeeData>().InstancePerRequest();
-            builder.RegisterType<SqlUserData>().As<IUserData>().InstancePerRequest();
+            builder.RegisterType<SqlUserData>().As<IUserData>().InstancePerRequest(); 
+            builder.RegisterType<SqlImageData>().As<IImageData>().InstancePerRequest();
+
 
             builder.RegisterType<EmployeeDbContext>().InstancePerRequest();
 

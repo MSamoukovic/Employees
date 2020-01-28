@@ -117,12 +117,18 @@
     <Compile Include="Migrations\202001271426507_AddUserRolesTable.designer.cs">
       <DependentUpon>202001271426507_AddUserRolesTable.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202001281111399_AddedTableImages.cs" />
+    <Compile Include="Migrations\202001281111399_AddedTableImages.designer.cs">
+      <DependentUpon>202001281111399_AddedTableImages.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\Image.cs" />
     <Compile Include="Models\Person.cs" />
     <Compile Include="Models\Role.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\IImageData.cs" />
     <Compile Include="Services\login\CustomMembership.cs" />
     <Compile Include="Services\login\CustomMembershipUser.cs" />
     <Compile Include="Services\login\CustomPrincipal.cs" />
@@ -132,6 +138,7 @@
     <Compile Include="Services\IPersonData.cs" />
     <Compile Include="Services\IUserData.cs" />
     <Compile Include="Services\SqlEmployeeData.cs" />
+    <Compile Include="Services\SqlImageData.cs" />
     <Compile Include="Services\SqlPersonData.cs" />
     <Compile Include="Services\SqlUserData.cs" />
   </ItemGroup>
@@ -164,6 +171,12 @@
     <EmbeddedResource Include="Migrations\202001271426507_AddUserRolesTable.resx">
       <DependentUpon>202001271426507_AddUserRolesTable.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202001281111399_AddedTableImages.resx">
+      <DependentUpon>202001281111399_AddedTableImages.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Views\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -14,6 +14,8 @@ namespace Employees.Data.Services
         public DbSet<Person> Persons { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<Role> Roles { get; set; }
+        public DbSet<Image> Images { get; set; }
+
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
